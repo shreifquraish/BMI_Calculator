@@ -1,16 +1,69 @@
-# first
+# 📱 BMI Calculator - تطبيق حاسبة مؤشر كتلة الجسم
 
-A new Flutter project.
+تطبيق Flutter جميل وسهل الاستخدام لحساب مؤشر كتلة الجسم (BMI)، يساعد المستخدمين على تتبع صحتهم من خلال حساب BMI بناءً على بياناتهم الشخصية وتقديم نصائح صحية مخصصة.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## ✨ المميزات
 
-A few resources to get you started if this is your first Flutter project:
+### 📝 جمع البيانات الشخصية
+- الاسم الكامل مع تنسيق تلقائي (أول حرف كبير لكل كلمة)
+- العمر مع التحقق من صحة الإدخال
+- اختيار الجنس (ذكر/أنثى) مع تصميم تفاعلي ملون
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### 📏 إدخال الطول والوزن
+- نطاق الطول: 120-220 سم
+- نطاق الوزن: 40-300 كجم
+- تحقق فوري من صحة البيانات مع رسائل خطأ واضحة
+- عرض معادلة BMI للتذكير
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### 🧮 حساب مؤشر كتلة الجسم
+- حساب تلقائي باستخدام المعادلة: `BMI = الوزن (كجم) ÷ مربع الطول (م²)`
+- عرض النتيجة بشكل بارز مع ترميز لوني
+
+### 🏷️ فئات BMI
+
+| الفئة | النطاق | اللون |
+|-------|--------|-------|
+| نحيف | أقل من 18.5 | 🔵 أزرق |
+| طبيعي | 18.5 - 24.9 | 🟢 أخضر |
+| زيادة وزن | 25.0 - 29.9 | 🟠 برتقالي |
+| سمنة | 30.0 فأكثر | 🔴 أحمر |
+
+### 💡 نصائح مخصصة
+- توصيات صحية مبنية على فئة BMI
+- جدول مرجعي لتوضيح فئات BMI
+
+### 📊 عرض شامل للبيانات
+- جميع معلومات المستخدم في بطاقات منظمة
+- مؤشرات بصرية لكل مقياس صحي
+
+---
+
+## 📱 شاشات التطبيق
+
+| الشاشة | الوصف |
+|--------|-------|
+| **تسجيل الدخول** | جمع الاسم والعمر والجنس |
+| **الطول والوزن** | إدخال القياسات مع التحقق |
+| **النتيجة** | عرض BMI والحالة والنصائح |
+| **البيانات** | نظرة شاملة على جميع المقاييس الصحية |
+
+---
+
+## 🛠️ التقنيات المستخدمة
+
+- **Flutter** - إطار عمل واجهة المستخدم
+- **Dart** - لغة البرمجة
+- **Material Design** - مكونات وتصميم الواجهة
+- **State Management** - إدارة الحالة باستخدام setState
+
+---
+
+## 📋 المتطلبات الأساسية
+
+```bash
+Flutter SDK >= 3.0.0
+Dart SDK >= 2.18.0
+Android Studio / VS Code
+محاكي iOS / Android أو جهاز فعلي
